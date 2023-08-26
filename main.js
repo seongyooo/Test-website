@@ -6,7 +6,7 @@ user = prompt("User name", '');
 
 
 if(user === Admin){
-  check = passWord === prompt("비밀번호 입력", '');
+  check = (passWord === prompt("비밀번호 입력", ''));
   
   if(check)
     alert("환영합니다!");
