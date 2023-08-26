@@ -5,7 +5,7 @@ let check=0;
 user = prompt("User name", '');
 
 
-if(user === Admin){
+if(user === "Admin"){
   check = prompt("비밀번호 입력", '');
   
   if(check === passWord)
