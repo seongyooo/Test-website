@@ -1,5 +1,15 @@
-let num=0;
+let n = prompt('input n:', '2');
+let prime=1;
 
-while(num <= 100){
-  num=prompt('100 초과 입력:', '');
+for(let i=2; i<=n; i++){
+  prime=1;
+  for(let j=2; j<i; j++){
+    if(i%j === 0){
+      prime=0;
+      break;
+    }
+  }
+  
+  if(prime)
+    alert(i);
 }
