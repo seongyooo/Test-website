@@ -3,7 +3,9 @@ let passWord="TheMaster";
 
 user = prompt("User name", '');
 
-if(!user)
+
+
+if(!user || user !== "Admin")
   alert("취소되었습니다");
 else if(user !== passWord)
   alert("인증에 실패하였습니다");
